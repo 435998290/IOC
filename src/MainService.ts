@@ -1,6 +1,7 @@
-import { inject } from './inject';
+import { inject, injectable } from './inject';
 import { HumanService } from './HumanService';
 
+@injectable
 export class MainService {
     @inject(HumanService) humanService: HumanService;
     publish = () => {

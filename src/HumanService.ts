@@ -1,4 +1,6 @@
+import { injectable } from './inject';
 import { observable } from './WxBaseComponent';
+
 
 export class HumanService {
     data = observable({
